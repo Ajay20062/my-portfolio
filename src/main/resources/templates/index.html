@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" th:content="${description}">
+    <title th:text="${title}">My Portfolio</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ajay Dharrsan T R</h1>
+            <p>Full Stack Developer | Java Specialist | Spring Boot Enthusiast</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about" onclick="smoothScroll('about', event)">About</a></li>
+                <li><a href="#projects" onclick="smoothScroll('projects', event)">Projects</a></li>
+                <li><a href="#skills" onclick="smoothScroll('skills', event)">Skills</a></li>
+                <li><a href="#contact" onclick="smoothScroll('contact', event)">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate full stack developer with expertise in Java, Spring Boot, and modern web technologies. 
+               I love building robust and scalable applications that solve real-world problems. With a strong foundation 
+               in backend development and a keen eye for frontend design, I create seamless user experiences.</p>
+            <p>My journey in software development has been driven by curiosity and a desire to learn cutting-edge technologies. 
+               I believe in writing clean, maintainable code and following best practices in software engineering.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-icon">🚀</div>
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website built with Spring Boot and Thymeleaf, featuring modern design and smooth animations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Thymeleaf</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🛒</div>
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">📋</div>
+                    <h3>Task Management System</h3>
+                    <p>A collaborative task management application with real-time updates, team features, and analytics dashboard.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Maven</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:ajay.dharrsan@example.com">ajay.dharrsan@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/ajaydharrsan">github.com/ajaydharrsan</a>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/ajaydharrsan">linkedin.com/in/ajaydharrsan</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ajay Dharrsan T R. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update button icon
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        }
+        
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.querySelector('.theme-toggle').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        function smoothScroll(targetId, event) {
+            event.preventDefault();
+            const element = document.getElementById(targetId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            
+            // Update active nav link based on scroll position
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a:not(.theme-toggle)');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
