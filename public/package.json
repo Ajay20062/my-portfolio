@@ -1,0 +1,1 @@
+{\n  "name": "my-portfolio",\n  "version": "1.0.0",\n  "private": true,\n  "scripts": {\n    "dev": "vite",\n    "build": "vite build",\n    "serve": "vite preview"\n  },\n  "dependencies": {},\n  "devDependencies": {\n    "vite": "^latest",\n    "react": "^latest",\n    "react-dom": "^latest"\n  }\n}
