@@ -25,6 +25,7 @@
 
 ## 📫 Connect with me
 
-GitHub: https://github.com/Ajay20062  
+GitHub: https://github.com/Ajay20062
+
 LinkedIn: (https://www.linkedin.com/in/ajay-dharrsan/)
 Email: ajaydharrsan@gmail.com
