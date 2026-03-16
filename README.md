@@ -1,6 +1,6 @@
-# Hi 👋 I'm Ajay Dharrsan
+# Hi 👋 I'm Ajay Dharrsan T R
 
-💻 Java Full Stack Developer  
+💻 Full Stack Developer  
 🎓 Computer Science Student  
 🌱 Currently learning Spring Boot and Web Development
 
@@ -28,4 +28,5 @@
 GitHub: https://github.com/Ajay20062
 
 LinkedIn: (https://www.linkedin.com/in/ajay-dharrsan/)
+
 Email: ajaydharrsan@gmail.com
