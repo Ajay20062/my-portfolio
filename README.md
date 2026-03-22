@@ -1,32 +1,54 @@
-# Hi 👋 I'm Ajay Dharrsan T R
+# 👋 Hi, I'm Ajay
 
-💻 Full Stack Developer  
-🎓 Computer Science Student  
-🌱 Currently learning Spring Boot and Web Development
+💻 Full Stack Developer | Backend Specialist  
+🚀 Passionate about building scalable web applications  
 
-🚀 Passionate about building web applications and solving problems with code.
+---
 
+## 🧠 Skills
 
-## 🛠 Skills
+- 🌐 Frontend: HTML, CSS, JavaScript
+- ⚙️ Backend: Node.js, Express.js
+- 🗄️ Database: MYSQL
+- 🛠️ Tools: Git, GitHub, VS Code
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+---
 
+## 🚀 Projects
+
+### 🛒 E-Commerce Website
+- Full-stack shopping platform
+- Features: Cart, Authentication, Orders
+- Tech: Node.js, MongoDB, JavaScript
+
+### 📄 ATS System
+- Resume screening system
+- Filters candidates automatically
+- Backend-focused project
+
+### 🌐 Portfolio Website
+- Personal portfolio with contact form
+- Admin dashboard for messages
+
+---
 
 ## 📊 GitHub Stats
 
-![Ajay's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ajay20062&show_icons=true&theme=tokyonight)
+![Ajay's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ajay20062&show_icons=true&theme=radical)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Ajay20062&layout=compact&theme=tokyonight)
+---
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Ajay20062&theme=react-dark)
+## 🔥 Top Languages
 
-## 📫 Connect with me
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ajay20062&layout=compact&theme=radical)
 
-GitHub: https://github.com/Ajay20062
+---
 
-LinkedIn: (https://www.linkedin.com/in/ajay-dharrsan/)
+## 📫 Contact Me
 
-Email: ajaydharrsan@gmail.com
+- 📧 Email: ajaydharrsan@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/ajay-dharrsan/
+
+---
+
+⭐ *Always learning and building new things!*
