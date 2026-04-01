@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Ajay
+# 👋 Hi, I'm T R Ajay Dharrsan
 
 💻 Full Stack Developer | Backend Specialist  
 🚀 Passionate about building scalable web applications  
@@ -7,7 +7,7 @@
 
 ## 🧠 Skills
 
-- 🌐 Frontend: HTML, CSS, JavaScript
+- 🌐 Frontend: HTML, CSS, JavaScript, Java
 - ⚙️ Backend: Node.js, Express.js
 - 🗄️ Database: MYSQL
 - 🛠️ Tools: Git, GitHub, VS Code
